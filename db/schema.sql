@@ -1,7 +1,9 @@
 
-create database burgers_db;
+create database IF NOT EXISTS burgers_db;
 
 use burgers_db;
+
+DROP TABLE IF EXISTS burgers;
 
 create table burgers (
     id int(10) auto_increment not null,
